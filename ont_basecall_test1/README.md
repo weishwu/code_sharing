@@ -1,2 +1,3 @@
 - slurm script: barcode74.sh
-- log: basecall_sup.test.10548-SM-1.log
+- slurm log: basecall_sup.test.10548-SM-1.log
+- nextflow log: 10548-SM-1.nextflow.log
