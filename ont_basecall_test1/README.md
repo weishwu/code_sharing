@@ -1,1 +1,1 @@
-
+- slurm script: barcode74.sh
