@@ -1,0 +1,276 @@
+Apr-09 14:30:50.611 [main] DEBUG nextflow.cli.Launcher - Setting HTTP proxy: ProxyConfig[protocol=http; host=proxy1.arc-ts.umich.edu; port=3128]
+Apr-09 14:30:50.643 [main] DEBUG nextflow.cli.Launcher - Setting HTTPS proxy: ProxyConfig[protocol=https; host=proxy1.arc-ts.umich.edu; port=3128]
+Apr-09 14:30:50.644 [main] DEBUG nextflow.cli.Launcher - Setting FTP proxy: ProxyConfig[protocol=ftp; host=proxy1.arc-ts.umich.edu; port=3128]
+Apr-09 14:30:50.644 [main] DEBUG nextflow.cli.Launcher - Setting http proxy: ProxyConfig[protocol=http; host=proxy1.arc-ts.umich.edu; port=3128]
+Apr-09 14:30:50.644 [main] DEBUG nextflow.cli.Launcher - Setting https proxy: ProxyConfig[protocol=https; host=proxy1.arc-ts.umich.edu; port=3128]
+Apr-09 14:30:50.644 [main] DEBUG nextflow.cli.Launcher - Setting ftp proxy: ProxyConfig[protocol=ftp; host=proxy1.arc-ts.umich.edu; port=3128]
+Apr-09 14:30:50.644 [main] DEBUG nextflow.cli.Launcher - $> nextflow run epi2me-labs/wf-basecalling -revision prerelease --input /nfs/mm-isilon/bioinfcore/ActiveProjects/Bachman_mikebach_ONT1_weishwu/inputs/10548-SM/pod5_files_10548-SM/pod5_pass/barcode76/ --fastq_only --out_dir /nfs/mm-isilon/bioinfcore/ActiveProjects/Bachman_mikebach_ONT1_weishwu/outputs/basecalls_sup_test/10548-SM-3 --sample_name 10548-SM-3 --basecaller_cfg dna_r10.4.1_e8.2_400bps_sup@v4.3.0 --dorado_ext pod5 --qscore_filter 10 --merge_threads 20 --stats_threads 20 -profile singularity -c /nfs/mm-isilon/bioinfcore/ActiveProjects/Bachman_mikebach_ONT1_weishwu/scripts/nextflow_resource.cfg
+Apr-09 14:30:50.961 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.1
+Apr-09 14:30:50.994 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/weishwu/.nextflow/plugins; core-plugins: nf-amazon@2.1.4,nf-azure@1.3.3,nf-cloudcache@0.3.0,nf-codecommit@0.1.5,nf-console@1.0.6,nf-ga4gh@1.1.0,nf-google@1.8.3,nf-tower@1.6.3,nf-wave@1.0.1
+Apr-09 14:30:51.013 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Apr-09 14:30:51.015 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Apr-09 14:30:51.018 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Apr-09 14:30:51.031 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Apr-09 14:30:51.066 [main] DEBUG nextflow.scm.ProviderConfig - Using SCM config path: /home/weishwu/.nextflow/scm
+Apr-09 14:30:51.892 [main] DEBUG nextflow.scm.AssetManager - Git config: /home/weishwu/.nextflow/assets/epi2me-labs/wf-basecalling/.git/config; branch: master; remote: origin; url: https://github.com/epi2me-labs/wf-basecalling.git
+Apr-09 14:30:51.919 [main] DEBUG nextflow.scm.RepositoryFactory - Found Git repository result: [RepositoryFactory]
+Apr-09 14:30:51.930 [main] DEBUG nextflow.scm.AssetManager - Git config: /home/weishwu/.nextflow/assets/epi2me-labs/wf-basecalling/.git/config; branch: master; remote: origin; url: https://github.com/epi2me-labs/wf-basecalling.git
+Apr-09 14:30:52.719 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /home/weishwu/.nextflow/assets/epi2me-labs/wf-basecalling/nextflow.config
+Apr-09 14:30:52.724 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /nfs/mm-isilon/bioinfcore/ActiveProjects/Bachman_mikebach_ONT1_weishwu/scripts/nextflow_resource.cfg
+Apr-09 14:30:52.724 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/weishwu/.nextflow/assets/epi2me-labs/wf-basecalling/nextflow.config
+Apr-09 14:30:52.725 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /nfs/mm-isilon/bioinfcore/ActiveProjects/Bachman_mikebach_ONT1_weishwu/scripts/nextflow_resource.cfg
+Apr-09 14:30:52.735 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `singularity`
+Apr-09 14:30:52.860 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `singularity`
+Apr-09 14:30:52.879 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [standard, conda, singularity, awsbatch, discrete_gpus, local]
+Apr-09 14:30:52.910 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declararion
+Apr-09 14:30:52.910 [main] INFO  nextflow.cli.CmdRun - Launching `https://github.com/epi2me-labs/wf-basecalling` [gloomy_faraday] DSL2 - revision: 4f4baa4cca [prerelease]
+Apr-09 14:30:52.910 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Apr-09 14:30:52.910 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Apr-09 14:30:52.914 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/weishwu/.nextflow/secrets/store.json
+Apr-09 14:30:52.916 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@26be9a6] - activable => nextflow.secret.LocalSecretsProvider@26be9a6
+Apr-09 14:30:52.995 [main] DEBUG nextflow.Session - Session UUID: b40c7f80-6631-43f7-b696-323e85137944
+Apr-09 14:30:52.995 [main] DEBUG nextflow.Session - Run name: gloomy_faraday
+Apr-09 14:30:52.995 [main] DEBUG nextflow.Session - Executor pool size: 40
+Apr-09 14:30:53.006 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Apr-09 14:30:53.009 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=120; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Apr-09 14:30:53.042 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.10.1 build 5891
+  Created: 12-01-2024 22:01 UTC (17:01 EDT)
+  System: Linux 4.18.0-372.75.1.el8_6.x86_64
+  Runtime: Groovy 3.0.19 on OpenJDK 64-Bit Server VM 17.0.10-internal+0-adhoc..src
+  Encoding: UTF-8 (UTF-8)
+  Process: 3661463@gl1017.arc-ts.umich.edu [10.164.9.75]
+  CPUs: 40 - Mem: 120 GB (119.5 GB) - Swap: 0 (0)
+Apr-09 14:30:53.106 [main] DEBUG nextflow.Session - Work-dir: /nfs/mm-isilon/bioinfcore/ActiveProjects/Bachman_mikebach_ONT1_weishwu/outputs/basecalls_sup_test/10548-SM-3/work [nfs]
+Apr-09 14:30:53.129 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Apr-09 14:30:53.139 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Apr-09 14:30:53.208 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Apr-09 14:30:53.227 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 41; maxThreads: 1000
+Apr-09 14:30:53.389 [main] DEBUG nextflow.Session - Session start
+Apr-09 14:30:53.393 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow started -- trace file: /nfs/mm-isilon/bioinfcore/ActiveProjects/Bachman_mikebach_ONT1_weishwu/outputs/basecalls_sup_test/10548-SM-3/execution/trace.txt
+Apr-09 14:30:53.422 [main] DEBUG nextflow.Session - Using default localLib path: /home/weishwu/.nextflow/assets/epi2me-labs/wf-basecalling/lib
+Apr-09 14:30:53.426 [main] DEBUG nextflow.Session - Adding to the classpath library: /home/weishwu/.nextflow/assets/epi2me-labs/wf-basecalling/lib
+Apr-09 14:30:53.427 [main] DEBUG nextflow.Session - Adding to the classpath library: /home/weishwu/.nextflow/assets/epi2me-labs/wf-basecalling/lib/nfcore_external_java_deps.jar
+Apr-09 14:30:55.161 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Apr-09 14:30:56.003 [main] WARN  nextflow.NextflowMeta$Preview - NEXTFLOW RECURSION IS A PREVIEW FEATURE - SYNTAX AND FUNCTIONALITY CAN CHANGE IN FUTURE RELEASES
+Apr-09 14:30:56.130 [main] INFO  nextflow.Nextflow - 
+[0;92m||||||||||   [0m[2m_____ ____ ___ ____  __  __ _____      _       _
+[0;92m||||||||||  [0m[2m| ____|  _ \_ _|___ \|  \/  | ____|    | | __ _| |__  ___
+[0;33m|||||       [0m[2m|  _| | |_) | |  __) | |\/| |  _| _____| |/ _` | '_ \/ __|
+[0;33m|||||       [0m[2m| |___|  __/| | / __/| |  | | |__|_____| | (_| | |_) \__ \
+[0;94m||||||||||  [0m[2m|_____|_|  |___|_____|_|  |_|_____|    |_|\__,_|_.__/|___/
+[0;94m||||||||||  [0m[1mwf-basecalling v1.1.7-g4f4baa4[0m
+[2m--------------------------------------------------------------------------------[0m
+[1mCore Nextflow options[0m
+  [0;34mrevision       : [0;32mprerelease[0m
+  [0;34mrunName        : [0;32mgloomy_faraday[0m
+  [0;34mcontainerEngine: [0;32msingularity[0m
+  [0;34mcontainer      : [0;32m[withLabel:wf_basecalling:ontresearch/dorado:shac28cd94f2303b0493a4b16ca86e711852c2b8525, withLabel:wf_common:ontresearch/wf-common:sha362c808b4f22ce66f940bef192a1316aec5f4c75][0m
+  [0;34mlaunchDir      : [0;32m/nfs/mm-isilon/bioinfcore/ActiveProjects/Bachman_mikebach_ONT1_weishwu/outputs/basecalls_sup_test/10548-SM-3[0m
+  [0;34mworkDir        : [0;32m/nfs/mm-isilon/bioinfcore/ActiveProjects/Bachman_mikebach_ONT1_weishwu/outputs/basecalls_sup_test/10548-SM-3/work[0m
+  [0;34mprojectDir     : [0;32m/home/weishwu/.nextflow/assets/epi2me-labs/wf-basecalling[0m
+  [0;34muserName       : [0;32mweishwu[0m
+  [0;34mprofile        : [0;32msingularity[0m
+  [0;34mconfigFiles    : [0;32m/home/weishwu/.nextflow/assets/epi2me-labs/wf-basecalling/nextflow.config, /nfs/mm-isilon/bioinfcore/ActiveProjects/Bachman_mikebach_ONT1_weishwu/scripts/nextflow_resource.cfg[0m
+
+[1mInput Options[0m
+  [0;34minput          : [0;32m/nfs/mm-isilon/bioinfcore/ActiveProjects/Bachman_mikebach_ONT1_weishwu/inputs/10548-SM/pod5_files_10548-SM/pod5_pass/barcode76/[0m
+
+[1mOutput Options[0m
+  [0;34mout_dir        : [0;32m/nfs/mm-isilon/bioinfcore/ActiveProjects/Bachman_mikebach_ONT1_weishwu/outputs/basecalls_sup_test/10548-SM-3[0m
+  [0;34msample_name    : [0;32m10548-SM-3[0m
+  [0;34mfastq_only     : [0;32mtrue[0m
+
+[1mBasecalling options[0m
+  [0;34mbasecaller_cfg : [0;32mdna_r10.4.1_e8.2_400bps_sup@v4.3.0[0m
+
+[1mMultiprocessing Options[0m
+  [0;34mmerge_threads  : [0;32m20[0m
+  [0;34mstats_threads  : [0;32m20[0m
+
+!! Only displaying parameters that differ from the pipeline defaults !!
+[2m--------------------------------------------------------------------------------[0m
+If you use epi2me-labs/wf-basecalling for your analysis please cite:
+
+* The nf-core framework
+  https://doi.org/10.1038/s41587-020-0439-x
+
+
+[2m--------------------------------------------------------------------------------[0m
+This is epi2me-labs/wf-basecalling v1.1.7-g4f4baa4.
+[2m--------------------------------------------------------------------------------[0m
+Apr-09 14:30:56.989 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:wf_basecalling` matches labels `wf_dorado,wf_basecalling,gpu` for process with name wf_dorado:dorado
+Apr-09 14:30:56.990 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:gpu` matches labels `wf_dorado,wf_basecalling,gpu` for process with name wf_dorado:dorado
+Apr-09 14:30:56.994 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-09 14:30:56.995 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-09 14:30:57.000 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Apr-09 14:30:57.008 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=40; memory=40 GB; capacity=40; pollInterval=100ms; dumpInterval=5m
+Apr-09 14:30:57.012 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Apr-09 14:30:57.067 [main] WARN  nextflow.Nextflow - Reads are not filtered when using bonito.
+Apr-09 14:30:57.069 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:wf_basecalling` matches labels `wf_basecalling` for process with name wf_dorado:qsFilter
+Apr-09 14:30:57.070 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-09 14:30:57.070 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-09 14:30:57.076 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:wf_basecalling` matches labels `wf_basecalling` for process with name wf_dorado:merge_pass_calls_to_fastq
+Apr-09 14:30:57.077 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-09 14:30:57.077 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-09 14:30:57.081 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:wf_basecalling` matches labels `wf_basecalling` for process with name wf_dorado:merge_fail_calls_to_fastq
+Apr-09 14:30:57.082 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-09 14:30:57.082 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-09 14:30:57.085 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:wf_basecalling` matches labels `wf_basecalling` for process with name getVersions
+Apr-09 14:30:57.085 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-09 14:30:57.085 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-09 14:30:57.087 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:wf_basecalling` matches labels `wf_basecalling` for process with name getParams
+Apr-09 14:30:57.088 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-09 14:30:57.088 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-09 14:30:57.093 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:wf_common` matches labels `wf_common` for process with name bamstats
+Apr-09 14:30:57.094 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-09 14:30:57.094 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-09 14:30:57.103 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:wf_common` matches labels `wf_common` for process with name progressive_stats
+Apr-09 14:30:57.104 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-09 14:30:57.104 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-09 14:30:57.114 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:wf_common` matches labels `wf_common` for process with name makeReport
+Apr-09 14:30:57.115 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-09 14:30:57.115 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-09 14:30:57.120 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:wf_basecalling` matches labels `wf_basecalling` for process with name output_last
+Apr-09 14:30:57.121 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-09 14:30:57.121 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-09 14:30:57.125 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:wf_basecalling` matches labels `wf_basecalling` for process with name output_stream
+Apr-09 14:30:57.126 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-09 14:30:57.126 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-09 14:30:57.128 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: dorado_summary, qsFilter, merge_calls_to_fastq, wf_dorado:merge_fail_calls_to_fastq, bonito, wf_dorado:qsFilter, progressive_pairings, progressive_stats, output_last, wf_dorado:dorado, combine_dorado_summaries, makeReport, make_mmi, getVersions, merge_fail_calls, output_pod5s, split_xam, pair_stats, wf_dorado:merge_pass_calls_to_fastq, cram_cache, output_stream, merge_pass_calls_to_fastq, bamstats, merge_calls, merge_pass_calls, dorado, merge_fail_calls_to_fastq, stopCondition, align_and_qsFilter, getParams
+Apr-09 14:30:57.128 [main] DEBUG nextflow.Session - Igniting dataflow network (18)
+Apr-09 14:30:57.135 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /nfs/mm-isilon/bioinfcore/ActiveProjects/Bachman_mikebach_ONT1_weishwu/inputs/10548-SM/pod5_files_10548-SM/pod5_pass/barcode76/; pattern: **.pod5; options: [checkIfExists:true]
+Apr-09 14:30:57.135 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > wf_dorado:dorado
+Apr-09 14:30:57.136 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > wf_dorado:qsFilter
+Apr-09 14:30:57.136 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > wf_dorado:merge_pass_calls_to_fastq
+Apr-09 14:30:57.136 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > wf_dorado:merge_fail_calls_to_fastq
+Apr-09 14:30:57.136 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > getVersions
+Apr-09 14:30:57.137 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > getParams
+Apr-09 14:30:57.137 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > bamstats
+Apr-09 14:30:57.138 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > progressive_stats
+Apr-09 14:30:57.138 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > makeReport
+Apr-09 14:30:57.138 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > output_last
+Apr-09 14:30:57.138 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > output_stream
+Apr-09 14:30:57.139 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_6d0b476ec1d00962: /home/weishwu/.nextflow/assets/epi2me-labs/wf-basecalling/./lib/signal/ingress.nf
+  Script_fa586cc0d5c6318c: /home/weishwu/.nextflow/assets/epi2me-labs/wf-basecalling/./lib/signal/./merge.nf
+  Script_65b9ab3eaea8ce22: /home/weishwu/.nextflow/assets/epi2me-labs/wf-basecalling/main.nf
+Apr-09 14:30:57.139 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Apr-09 14:30:57.139 [main] DEBUG nextflow.Session - Session await
+Apr-09 14:30:57.185 [Actor Thread 36] DEBUG nextflow.container.SingularityCache - Singularity found local store for image=docker://ontresearch/dorado:shac28cd94f2303b0493a4b16ca86e711852c2b8525; path=/nfs/mm-isilon/bioinfcore/ActiveProjects/Bachman_mikebach_ONT1_weishwu/env/nextflow_singularity_images/ontresearch-dorado-shac28cd94f2303b0493a4b16ca86e711852c2b8525.img
+Apr-09 14:30:57.252 [Actor Thread 39] DEBUG nextflow.util.CacheHelper - Hash asset file sha-256: /home/weishwu/.nextflow/assets/epi2me-labs/wf-basecalling/data/OPTIONAL_FILE
+Apr-09 14:30:57.263 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-09 14:30:57.266 [Task submitter] INFO  nextflow.Session - [1c/ea43f7] Submitted process > getParams
+Apr-09 14:30:57.278 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-09 14:30:57.279 [Task submitter] INFO  nextflow.Session - [33/53c919] Submitted process > getVersions
+Apr-09 14:30:57.298 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-09 14:30:57.298 [Task submitter] INFO  nextflow.Session - [27/2ca1ac] Submitted process > wf_dorado:dorado (1)
+Apr-09 14:30:57.875 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: getParams; status: COMPLETED; exit: 0; error: -; workDir: /nfs/mm-isilon/bioinfcore/ActiveProjects/Bachman_mikebach_ONT1_weishwu/outputs/basecalls_sup_test/10548-SM-3/work/1c/ea43f7c80cdb5da55ab13781d1bf21]
+Apr-09 14:31:01.424 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: getVersions; status: COMPLETED; exit: 0; error: -; workDir: /nfs/mm-isilon/bioinfcore/ActiveProjects/Bachman_mikebach_ONT1_weishwu/outputs/basecalls_sup_test/10548-SM-3/work/33/53c919d89dd37ae16243355acf1473]
+Apr-09 14:35:33.990 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: wf_dorado:dorado (1); status: COMPLETED; exit: 0; error: -; workDir: /nfs/mm-isilon/bioinfcore/ActiveProjects/Bachman_mikebach_ONT1_weishwu/outputs/basecalls_sup_test/10548-SM-3/work/27/2ca1ac9ab15f78aab4d9272c508a2a]
+Apr-09 14:35:34.005 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-09 14:35:34.006 [Task submitter] INFO  nextflow.Session - [05/f6138f] Submitted process > wf_dorado:dorado (2)
+Apr-09 14:35:34.108 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Process wf_dorado:dorado > Skipping output binding because one or more optional files are missing: fileoutparam<1>
+Apr-09 14:35:57.126 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 4; name: wf_dorado:dorado (2); status: RUNNING; exit: -; error: -; workDir: /nfs/mm-isilon/bioinfcore/ActiveProjects/Bachman_mikebach_ONT1_weishwu/outputs/basecalls_sup_test/10548-SM-3/work/05/f6138f0d90f56112a5fb37d1463060]
+Apr-09 14:35:58.138 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 1 -- tasks to be submitted are shown below
+~> TaskHandler[id: 5; name: wf_dorado:qsFilter (1); status: NEW; exit: -; error: -; workDir: /nfs/mm-isilon/bioinfcore/ActiveProjects/Bachman_mikebach_ONT1_weishwu/outputs/basecalls_sup_test/10548-SM-3/work/10/4aea959b274c8430aded416eddecae]
+Apr-09 14:36:29.995 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: wf_dorado:dorado (2); status: COMPLETED; exit: 0; error: -; workDir: /nfs/mm-isilon/bioinfcore/ActiveProjects/Bachman_mikebach_ONT1_weishwu/outputs/basecalls_sup_test/10548-SM-3/work/05/f6138f0d90f56112a5fb37d1463060]
+Apr-09 14:36:30.002 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Process wf_dorado:dorado > Skipping output binding because one or more optional files are missing: fileoutparam<1>
+Apr-09 14:36:30.009 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-09 14:36:30.009 [Task submitter] INFO  nextflow.Session - [10/4aea95] Submitted process > wf_dorado:qsFilter (1)
+Apr-09 14:36:30.020 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-09 14:36:30.020 [Task submitter] INFO  nextflow.Session - [75/1df179] Submitted process > wf_dorado:qsFilter (2)
+Apr-09 14:36:31.312 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: wf_dorado:qsFilter (2); status: COMPLETED; exit: 0; error: -; workDir: /nfs/mm-isilon/bioinfcore/ActiveProjects/Bachman_mikebach_ONT1_weishwu/outputs/basecalls_sup_test/10548-SM-3/work/75/1df179885b2abb7ced852c6b7450d5]
+Apr-09 14:36:31.317 [Actor Thread 31] DEBUG nextflow.container.SingularityCache - Singularity found local store for image=docker://ontresearch/wf-common:sha362c808b4f22ce66f940bef192a1316aec5f4c75; path=/nfs/mm-isilon/bioinfcore/ActiveProjects/Bachman_mikebach_ONT1_weishwu/env/nextflow_singularity_images/ontresearch-wf-common-sha362c808b4f22ce66f940bef192a1316aec5f4c75.img
+Apr-09 14:36:31.326 [Actor Thread 38] DEBUG nextflow.util.CacheHelper - Hash asset file sha-256: /home/weishwu/.nextflow/assets/epi2me-labs/wf-basecalling/bin/fastcat_histogram.py
+Apr-09 14:36:31.343 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-09 14:36:31.343 [Task submitter] INFO  nextflow.Session - [42/4be36a] Submitted process > bamstats (1)
+Apr-09 14:36:33.468 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: wf_dorado:qsFilter (1); status: COMPLETED; exit: 0; error: -; workDir: /nfs/mm-isilon/bioinfcore/ActiveProjects/Bachman_mikebach_ONT1_weishwu/outputs/basecalls_sup_test/10548-SM-3/work/10/4aea959b274c8430aded416eddecae]
+Apr-09 14:36:34.885 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: bamstats (1); status: COMPLETED; exit: 0; error: -; workDir: /nfs/mm-isilon/bioinfcore/ActiveProjects/Bachman_mikebach_ONT1_weishwu/outputs/basecalls_sup_test/10548-SM-3/work/42/4be36af12cc15141cd96de60d33b1c]
+Apr-09 14:36:34.890 [Actor Thread 39] DEBUG nextflow.util.CacheHelper - Hash asset file sha-256: /home/weishwu/.nextflow/assets/epi2me-labs/wf-basecalling/bin/add_jsons.py
+Apr-09 14:36:34.897 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-09 14:36:34.897 [Task submitter] INFO  nextflow.Session - [5e/77c502] Submitted process > wf_dorado:merge_pass_calls_to_fastq
+Apr-09 14:36:34.907 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-09 14:36:34.907 [Task submitter] INFO  nextflow.Session - [21/5dac1c] Submitted process > progressive_stats (1)
+Apr-09 14:36:35.557 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: progressive_stats (1); status: COMPLETED; exit: 0; error: -; workDir: /nfs/mm-isilon/bioinfcore/ActiveProjects/Bachman_mikebach_ONT1_weishwu/outputs/basecalls_sup_test/10548-SM-3/work/21/5dac1c24d63b0451cfb21da96c3a31]
+Apr-09 14:36:35.581 [Actor Thread 39] DEBUG nextflow.util.CacheHelper - Hash asset file sha-256: /home/weishwu/.nextflow/assets/epi2me-labs/wf-basecalling/bin/report.py
+Apr-09 14:36:36.571 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-09 14:36:36.571 [Task submitter] INFO  nextflow.Session - [e4/836187] Submitted process > makeReport (1)
+Apr-09 14:36:38.883 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: wf_dorado:merge_pass_calls_to_fastq; status: COMPLETED; exit: 0; error: -; workDir: /nfs/mm-isilon/bioinfcore/ActiveProjects/Bachman_mikebach_ONT1_weishwu/outputs/basecalls_sup_test/10548-SM-3/work/5e/77c50264e34adf2a16c86319d97f4f]
+Apr-09 14:36:38.894 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-09 14:36:38.894 [Task submitter] INFO  nextflow.Session - [ea/de0767] Submitted process > wf_dorado:merge_fail_calls_to_fastq
+Apr-09 14:36:38.906 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-09 14:36:38.906 [Task submitter] INFO  nextflow.Session - [d8/570a9e] Submitted process > output_stream (1)
+Apr-09 14:36:39.364 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 12; name: output_stream (1); status: COMPLETED; exit: 0; error: -; workDir: /nfs/mm-isilon/bioinfcore/ActiveProjects/Bachman_mikebach_ONT1_weishwu/outputs/basecalls_sup_test/10548-SM-3/work/d8/570a9ee3f6b1240b47fcbfedb7a888]
+Apr-09 14:36:39.375 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=120; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Apr-09 14:36:39.463 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: wf_dorado:merge_fail_calls_to_fastq; status: COMPLETED; exit: 0; error: -; workDir: /nfs/mm-isilon/bioinfcore/ActiveProjects/Bachman_mikebach_ONT1_weishwu/outputs/basecalls_sup_test/10548-SM-3/work/ea/de0767c5e9fc82747c569d870ffa53]
+Apr-09 14:36:39.482 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-09 14:36:39.482 [Task submitter] INFO  nextflow.Session - [53/d4a580] Submitted process > output_stream (2)
+Apr-09 14:36:39.495 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-09 14:36:39.496 [Task submitter] INFO  nextflow.Session - [5c/ceb689] Submitted process > output_stream (4)
+Apr-09 14:36:39.517 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-09 14:36:39.518 [Task submitter] INFO  nextflow.Session - [a4/73069b] Submitted process > output_stream (3)
+Apr-09 14:36:39.532 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-09 14:36:39.532 [Task submitter] INFO  nextflow.Session - [a4/73069b] Submitted process > output_stream (7)
+Apr-09 14:36:39.544 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-09 14:36:39.544 [Task submitter] INFO  nextflow.Session - [a4/73069b] Submitted process > output_stream (6)
+Apr-09 14:36:39.555 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-09 14:36:39.556 [Task submitter] INFO  nextflow.Session - [eb/0f9197] Submitted process > output_stream (5)
+Apr-09 14:36:39.730 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 18; name: output_stream (7); status: COMPLETED; exit: 1; error: -; workDir: /nfs/mm-isilon/bioinfcore/ActiveProjects/Bachman_mikebach_ONT1_weishwu/outputs/basecalls_sup_test/10548-SM-3/work/a4/73069b94e4cd5871aa4876a9ace517]
+Apr-09 14:36:39.734 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=output_stream (7); work-dir=/nfs/mm-isilon/bioinfcore/ActiveProjects/Bachman_mikebach_ONT1_weishwu/outputs/basecalls_sup_test/10548-SM-3/work/a4/73069b94e4cd5871aa4876a9ace517
+  error [nextflow.exception.ProcessFailedException]: Process `output_stream (7)` terminated with an error exit status (1)
+Apr-09 14:36:39.751 [Task monitor] ERROR nextflow.processor.TaskProcessor - Error executing process > 'output_stream (7)'
+
+Caused by:
+  Process `output_stream (7)` terminated with an error exit status (1)
+
+Command executed:
+
+  echo "Writing output files."
+
+Command exit status:
+  1
+
+Command output:
+  (empty)
+
+Command error:
+  ln: failed to create symbolic link 'OPTIONAL_FILE': File exists
+
+Work dir:
+  /nfs/mm-isilon/bioinfcore/ActiveProjects/Bachman_mikebach_ONT1_weishwu/outputs/basecalls_sup_test/10548-SM-3/work/a4/73069b94e4cd5871aa4876a9ace517
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
+Apr-09 14:36:39.755 [Task monitor] DEBUG nextflow.Session - Session aborted -- Cause: Process `output_stream (7)` terminated with an error exit status (1)
+Apr-09 14:36:39.771 [Task monitor] DEBUG nextflow.Session - The following nodes are still active:
+[process] output_last
+  status=ACTIVE
+  port 0: (value) OPEN  ; channel: fname
+  port 1: (cntrl) -     ; channel: $
+
+Apr-09 14:36:40.432 [main] DEBUG nextflow.Session - Session await > all processes finished
+Apr-09 14:36:40.433 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Apr-09 14:36:40.435 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 17; name: output_stream (6); status: COMPLETED; exit: 1; error: -; workDir: /nfs/mm-isilon/bioinfcore/ActiveProjects/Bachman_mikebach_ONT1_weishwu/outputs/basecalls_sup_test/10548-SM-3/work/a4/73069b94e4cd5871aa4876a9ace517]
+Apr-09 14:36:40.436 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=output_stream (6); work-dir=/nfs/mm-isilon/bioinfcore/ActiveProjects/Bachman_mikebach_ONT1_weishwu/outputs/basecalls_sup_test/10548-SM-3/work/a4/73069b94e4cd5871aa4876a9ace517
+  error [nextflow.exception.ProcessFailedException]: Process `output_stream (6)` terminated with an error exit status (1)
+Apr-09 14:36:40.439 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 16; name: output_stream (5); status: COMPLETED; exit: 0; error: -; workDir: /nfs/mm-isilon/bioinfcore/ActiveProjects/Bachman_mikebach_ONT1_weishwu/outputs/basecalls_sup_test/10548-SM-3/work/eb/0f919762d65a44ff15ad5ddbafd0fe]
+Apr-09 14:36:40.445 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Apr-09 14:36:40.604 [main] WARN  n.processor.TaskPollingMonitor - Killing running tasks (4)
+Apr-09 14:36:40.620 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill output_stream (2) -- command: kill -TERM 3673857; exit: 1 
+ bash: line 0: kill: (3673857) - No such process
+
+Apr-09 14:36:40.629 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill output_stream (4) -- command: kill -TERM 3673860; exit: 1 
+ bash: line 0: kill: (3673860) - No such process
+
+Apr-09 14:36:40.637 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill output_stream (3) -- command: kill -TERM 3673862; exit: 1 
+ bash: line 0: kill: (3673862) - No such process
+
+Apr-09 14:36:40.638 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=12; failedCount=2; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=4; succeedDuration=46m 40s; failedDuration=34ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=5; peakCpus=23; peakMemory=32 GB; ]
+Apr-09 14:36:40.638 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow completed -- saving trace file
+Apr-09 14:36:40.641 [main] DEBUG nextflow.trace.ReportObserver - Workflow completed -- rendering execution report
+Apr-09 14:36:41.220 [main] DEBUG nextflow.trace.TimelineObserver - Workflow completed -- rendering execution timeline
+Apr-09 14:36:41.294 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Apr-09 14:36:41.313 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
