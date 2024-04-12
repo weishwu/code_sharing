@@ -1,1 +1,2 @@
 - Slurm script: barcode75.sh
+- log: basecall_sup.test.10548-SM-2.log
