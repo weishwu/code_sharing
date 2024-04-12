@@ -1,0 +1,374 @@
+N E X T F L O W  ~  version 23.10.1
+Launching `https://github.com/epi2me-labs/wf-basecalling` [gloomy_faraday] DSL2 - revision: 4f4baa4cca [prerelease]
+WARN: NEXTFLOW RECURSION IS A PREVIEW FEATURE - SYNTAX AND FUNCTIONALITY CAN CHANGE IN FUTURE RELEASES
+
+||||||||||   _____ ____ ___ ____  __  __ _____      _       _
+||||||||||  | ____|  _ \_ _|___ \|  \/  | ____|    | | __ _| |__  ___
+|||||       |  _| | |_) | |  __) | |\/| |  _| _____| |/ _` | '_ \/ __|
+|||||       | |___|  __/| | / __/| |  | | |__|_____| | (_| | |_) \__ \
+||||||||||  |_____|_|  |___|_____|_|  |_|_____|    |_|\__,_|_.__/|___/
+||||||||||  wf-basecalling v1.1.7-g4f4baa4
+--------------------------------------------------------------------------------
+Core Nextflow options
+  revision       : prerelease
+  runName        : gloomy_faraday
+  containerEngine: singularity
+  container      : [withLabel:wf_basecalling:ontresearch/dorado:shac28cd94f2303b0493a4b16ca86e711852c2b8525, withLabel:wf_common:ontresearch/wf-common:sha362c808b4f22ce66f940bef192a1316aec5f4c75]
+  launchDir      : /nfs/mm-isilon/bioinfcore/ActiveProjects/Bachman_mikebach_ONT1_weishwu/outputs/basecalls_sup_test/10548-SM-3
+  workDir        : /nfs/mm-isilon/bioinfcore/ActiveProjects/Bachman_mikebach_ONT1_weishwu/outputs/basecalls_sup_test/10548-SM-3/work
+  projectDir     : /home/weishwu/.nextflow/assets/epi2me-labs/wf-basecalling
+  userName       : weishwu
+  profile        : singularity
+  configFiles    : /home/weishwu/.nextflow/assets/epi2me-labs/wf-basecalling/nextflow.config, /nfs/mm-isilon/bioinfcore/ActiveProjects/Bachman_mikebach_ONT1_weishwu/scripts/nextflow_resource.cfg
+
+Input Options
+  input          : /nfs/mm-isilon/bioinfcore/ActiveProjects/Bachman_mikebach_ONT1_weishwu/inputs/10548-SM/pod5_files_10548-SM/pod5_pass/barcode76/
+
+Output Options
+  out_dir        : /nfs/mm-isilon/bioinfcore/ActiveProjects/Bachman_mikebach_ONT1_weishwu/outputs/basecalls_sup_test/10548-SM-3
+  sample_name    : 10548-SM-3
+  fastq_only     : true
+
+Basecalling options
+  basecaller_cfg : dna_r10.4.1_e8.2_400bps_sup@v4.3.0
+
+Multiprocessing Options
+  merge_threads  : 20
+  stats_threads  : 20
+
+!! Only displaying parameters that differ from the pipeline defaults !!
+--------------------------------------------------------------------------------
+If you use epi2me-labs/wf-basecalling for your analysis please cite:
+
+* The nf-core framework
+  https://doi.org/10.1038/s41587-020-0439-x
+
+
+--------------------------------------------------------------------------------
+This is epi2me-labs/wf-basecalling v1.1.7-g4f4baa4.
+--------------------------------------------------------------------------------
+[-        ] process > wf_dorado:dorado               -
+[-        ] process > wf_dorado:qsFilter             -
+[-        ] process > wf_dorado:merge_pass_calls_... -
+[-        ] process > wf_dorado:merge_fail_calls_... -
+[-        ] process > getVersions                    -
+[-        ] process > getParams                      -
+[-        ] process > bamstats                       -
+[-        ] process > progressive_stats              -
+[-        ] process > makeReport                     -
+[-        ] process > output_last                    -
+[-        ] process > output_stream                  -
+WARN: Reads are not filtered when using bonito.
+
+executor >  local (3)
+[27/2ca1ac] process > wf_dorado:dorado (1)           [  0%] 0 of 2
+[-        ] process > wf_dorado:qsFilter             -
+[-        ] process > wf_dorado:merge_pass_calls_... -
+[-        ] process > wf_dorado:merge_fail_calls_... -
+[33/53c919] process > getVersions                    [  0%] 0 of 1
+[1c/ea43f7] process > getParams                      [  0%] 0 of 1
+[-        ] process > bamstats                       -
+[-        ] process > progressive_stats              -
+[-        ] process > makeReport                     -
+[-        ] process > output_last                    -
+[-        ] process > output_stream                  -
+WARN: Reads are not filtered when using bonito.
+
+executor >  local (3)
+[27/2ca1ac] process > wf_dorado:dorado (1)           [  0%] 0 of 2
+[-        ] process > wf_dorado:qsFilter             -
+[-        ] process > wf_dorado:merge_pass_calls_... -
+[-        ] process > wf_dorado:merge_fail_calls_... -
+[33/53c919] process > getVersions                    [  0%] 0 of 1
+[1c/ea43f7] process > getParams                      [100%] 1 of 1 ✔
+[-        ] process > bamstats                       -
+[-        ] process > progressive_stats              -
+[-        ] process > makeReport                     -
+[-        ] process > output_last                    -
+[-        ] process > output_stream                  -
+WARN: Reads are not filtered when using bonito.
+
+executor >  local (3)
+[27/2ca1ac] process > wf_dorado:dorado (1)           [  0%] 0 of 2
+[-        ] process > wf_dorado:qsFilter             -
+[-        ] process > wf_dorado:merge_pass_calls_... -
+[-        ] process > wf_dorado:merge_fail_calls_... -
+[33/53c919] process > getVersions                    [100%] 1 of 1 ✔
+[1c/ea43f7] process > getParams                      [100%] 1 of 1 ✔
+[-        ] process > bamstats                       -
+[-        ] process > progressive_stats              -
+[-        ] process > makeReport                     -
+[-        ] process > output_last                    -
+[-        ] process > output_stream                  -
+WARN: Reads are not filtered when using bonito.
+
+executor >  local (4)
+[27/2ca1ac] process > wf_dorado:dorado (1)           [ 50%] 1 of 2
+[-        ] process > wf_dorado:qsFilter             [  0%] 0 of 1
+[-        ] process > wf_dorado:merge_pass_calls_... -
+[-        ] process > wf_dorado:merge_fail_calls_... -
+[33/53c919] process > getVersions                    [100%] 1 of 1 ✔
+[1c/ea43f7] process > getParams                      [100%] 1 of 1 ✔
+[-        ] process > bamstats                       -
+[-        ] process > progressive_stats              -
+[-        ] process > makeReport                     -
+[-        ] process > output_last                    -
+[-        ] process > output_stream                  -
+
+
+executor >  local (6)
+[05/f6138f] process > wf_dorado:dorado (2)           [100%] 2 of 2 ✔
+[75/1df179] process > wf_dorado:qsFilter (2)         [  0%] 0 of 2
+[-        ] process > wf_dorado:merge_pass_calls_... -
+[-        ] process > wf_dorado:merge_fail_calls_... -
+[33/53c919] process > getVersions                    [100%] 1 of 1 ✔
+[1c/ea43f7] process > getParams                      [100%] 1 of 1 ✔
+[-        ] process > bamstats                       -
+[-        ] process > progressive_stats              -
+[-        ] process > makeReport                     -
+[-        ] process > output_last                    -
+[-        ] process > output_stream                  -
+
+
+executor >  local (7)
+[05/f6138f] process > wf_dorado:dorado (2)           [100%] 2 of 2 ✔
+[75/1df179] process > wf_dorado:qsFilter (2)         [ 50%] 1 of 2
+[-        ] process > wf_dorado:merge_pass_calls_... -
+[-        ] process > wf_dorado:merge_fail_calls_... -
+[33/53c919] process > getVersions                    [100%] 1 of 1 ✔
+[1c/ea43f7] process > getParams                      [100%] 1 of 1 ✔
+[42/4be36a] process > bamstats (1)                   [  0%] 0 of 1
+[-        ] process > progressive_stats              -
+[-        ] process > makeReport                     -
+[-        ] process > output_last                    -
+[-        ] process > output_stream                  -
+
+executor >  local (7)
+[05/f6138f] process > wf_dorado:dorado (2)           [100%] 2 of 2 ✔
+[75/1df179] process > wf_dorado:qsFilter (2)         [ 50%] 1 of 2
+[-        ] process > wf_dorado:merge_pass_calls_... -
+[-        ] process > wf_dorado:merge_fail_calls_... -
+[33/53c919] process > getVersions                    [100%] 1 of 1 ✔
+[1c/ea43f7] process > getParams                      [100%] 1 of 1 ✔
+[42/4be36a] process > bamstats (1)                   [  0%] 0 of 1
+[-        ] process > progressive_stats              -
+[-        ] process > makeReport                     -
+[-        ] process > output_last                    -
+[-        ] process > output_stream                  -
+
+executor >  local (7)
+[05/f6138f] process > wf_dorado:dorado (2)           [100%] 2 of 2 ✔
+[10/4aea95] process > wf_dorado:qsFilter (1)         [100%] 2 of 2 ✔
+[-        ] process > wf_dorado:merge_pass_calls_... [  0%] 0 of 1
+[-        ] process > wf_dorado:merge_fail_calls_... [  0%] 0 of 1
+[33/53c919] process > getVersions                    [100%] 1 of 1 ✔
+[1c/ea43f7] process > getParams                      [100%] 1 of 1 ✔
+[42/4be36a] process > bamstats (1)                   [  0%] 0 of 1
+[-        ] process > progressive_stats              -
+[-        ] process > makeReport                     -
+[-        ] process > output_last                    -
+[-        ] process > output_stream                  -
+
+executor >  local (9)
+[05/f6138f] process > wf_dorado:dorado (2)           [100%] 2 of 2 ✔
+[10/4aea95] process > wf_dorado:qsFilter (1)         [100%] 2 of 2 ✔
+[5e/77c502] process > wf_dorado:merge_pass_calls_... [  0%] 0 of 1
+[-        ] process > wf_dorado:merge_fail_calls_... [  0%] 0 of 1
+[33/53c919] process > getVersions                    [100%] 1 of 1 ✔
+[1c/ea43f7] process > getParams                      [100%] 1 of 1 ✔
+[42/4be36a] process > bamstats (1)                   [100%] 1 of 1 ✔
+[21/5dac1c] process > progressive_stats (1)          [  0%] 0 of 1
+[-        ] process > makeReport                     -
+[-        ] process > output_last                    -
+[-        ] process > output_stream                  -
+
+executor >  local (9)
+[05/f6138f] process > wf_dorado:dorado (2)           [100%] 2 of 2 ✔
+[10/4aea95] process > wf_dorado:qsFilter (1)         [100%] 2 of 2 ✔
+[5e/77c502] process > wf_dorado:merge_pass_calls_... [  0%] 0 of 1
+[-        ] process > wf_dorado:merge_fail_calls_... [  0%] 0 of 1
+[33/53c919] process > getVersions                    [100%] 1 of 1 ✔
+[1c/ea43f7] process > getParams                      [100%] 1 of 1 ✔
+[42/4be36a] process > bamstats (1)                   [100%] 1 of 1 ✔
+[21/5dac1c] process > progressive_stats (1)          [100%] 1 of 1 ✔
+[-        ] process > makeReport                     [  0%] 0 of 1
+[-        ] process > output_last                    -
+[-        ] process > output_stream                  -
+
+executor >  local (10)
+[05/f6138f] process > wf_dorado:dorado (2)           [100%] 2 of 2 ✔
+[10/4aea95] process > wf_dorado:qsFilter (1)         [100%] 2 of 2 ✔
+[5e/77c502] process > wf_dorado:merge_pass_calls_... [  0%] 0 of 1
+[-        ] process > wf_dorado:merge_fail_calls_... [  0%] 0 of 1
+[33/53c919] process > getVersions                    [100%] 1 of 1 ✔
+[1c/ea43f7] process > getParams                      [100%] 1 of 1 ✔
+[42/4be36a] process > bamstats (1)                   [100%] 1 of 1 ✔
+[21/5dac1c] process > progressive_stats (1)          [100%] 1 of 1 ✔
+[e4/836187] process > makeReport (1)                 [  0%] 0 of 1
+[-        ] process > output_last                    -
+[-        ] process > output_stream                  -
+
+executor >  local (10)
+[05/f6138f] process > wf_dorado:dorado (2)           [100%] 2 of 2 ✔
+[10/4aea95] process > wf_dorado:qsFilter (1)         [100%] 2 of 2 ✔
+[5e/77c502] process > wf_dorado:merge_pass_calls_... [  0%] 0 of 1
+[-        ] process > wf_dorado:merge_fail_calls_... [  0%] 0 of 1
+[33/53c919] process > getVersions                    [100%] 1 of 1 ✔
+[1c/ea43f7] process > getParams                      [100%] 1 of 1 ✔
+[42/4be36a] process > bamstats (1)                   [100%] 1 of 1 ✔
+[21/5dac1c] process > progressive_stats (1)          [100%] 1 of 1 ✔
+[e4/836187] process > makeReport (1)                 [  0%] 0 of 1
+[-        ] process > output_last                    -
+[-        ] process > output_stream                  -
+
+executor >  local (12)
+[05/f6138f] process > wf_dorado:dorado (2)           [100%] 2 of 2 ✔
+[10/4aea95] process > wf_dorado:qsFilter (1)         [100%] 2 of 2 ✔
+[5e/77c502] process > wf_dorado:merge_pass_calls_... [100%] 1 of 1 ✔
+[ea/de0767] process > wf_dorado:merge_fail_calls_... [  0%] 0 of 1
+[33/53c919] process > getVersions                    [100%] 1 of 1 ✔
+[1c/ea43f7] process > getParams                      [100%] 1 of 1 ✔
+[42/4be36a] process > bamstats (1)                   [100%] 1 of 1 ✔
+[21/5dac1c] process > progressive_stats (1)          [100%] 1 of 1 ✔
+[e4/836187] process > makeReport (1)                 [  0%] 0 of 1
+[-        ] process > output_last                    -
+[d8/570a9e] process > output_stream (1)              [  0%] 0 of 1
+
+executor >  local (12)
+[05/f6138f] process > wf_dorado:dorado (2)           [100%] 2 of 2 ✔
+[10/4aea95] process > wf_dorado:qsFilter (1)         [100%] 2 of 2 ✔
+[5e/77c502] process > wf_dorado:merge_pass_calls_... [100%] 1 of 1 ✔
+[ea/de0767] process > wf_dorado:merge_fail_calls_... [  0%] 0 of 1
+[33/53c919] process > getVersions                    [100%] 1 of 1 ✔
+[1c/ea43f7] process > getParams                      [100%] 1 of 1 ✔
+[42/4be36a] process > bamstats (1)                   [100%] 1 of 1 ✔
+[21/5dac1c] process > progressive_stats (1)          [100%] 1 of 1 ✔
+[e4/836187] process > makeReport (1)                 [  0%] 0 of 1
+[-        ] process > output_last                    -
+[d8/570a9e] process > output_stream (1)              [100%] 1 of 1
+
+executor >  local (18)
+[05/f6138f] process > wf_dorado:dorado (2)           [100%] 2 of 2 ✔
+[10/4aea95] process > wf_dorado:qsFilter (1)         [100%] 2 of 2 ✔
+[5e/77c502] process > wf_dorado:merge_pass_calls_... [100%] 1 of 1 ✔
+[ea/de0767] process > wf_dorado:merge_fail_calls_... [100%] 1 of 1 ✔
+[33/53c919] process > getVersions                    [100%] 1 of 1 ✔
+[1c/ea43f7] process > getParams                      [100%] 1 of 1 ✔
+[42/4be36a] process > bamstats (1)                   [100%] 1 of 1 ✔
+[21/5dac1c] process > progressive_stats (1)          [100%] 1 of 1 ✔
+[e4/836187] process > makeReport (1)                 [  0%] 0 of 1
+[-        ] process > output_last                    -
+[eb/0f9197] process > output_stream (5)              [ 14%] 1 of 7
+
+executor >  local (18)
+[05/f6138f] process > wf_dorado:dorado (2)           [100%] 2 of 2 ✔
+[10/4aea95] process > wf_dorado:qsFilter (1)         [100%] 2 of 2 ✔
+[5e/77c502] process > wf_dorado:merge_pass_calls_... [100%] 1 of 1 ✔
+[ea/de0767] process > wf_dorado:merge_fail_calls_... [100%] 1 of 1 ✔
+[33/53c919] process > getVersions                    [100%] 1 of 1 ✔
+[1c/ea43f7] process > getParams                      [100%] 1 of 1 ✔
+[42/4be36a] process > bamstats (1)                   [100%] 1 of 1 ✔
+[21/5dac1c] process > progressive_stats (1)          [100%] 1 of 1 ✔
+[e4/836187] process > makeReport (1)                 [  0%] 0 of 1
+[-        ] process > output_last                    -
+[eb/0f9197] process > output_stream (5)              [ 14%] 1 of 7
+ERROR ~ Error executing process > 'output_stream (7)'
+
+Caused by:
+  Process `output_stream (7)` terminated with an error exit status (1)
+
+Command executed:
+
+  echo "Writing output files."
+
+Command exit status:
+  1
+
+Command output:
+  (empty)
+
+Command error:
+  ln: failed to create symbolic link 'OPTIONAL_FILE': File exists
+
+Work dir:
+  /nfs/mm-isilon/bioinfcore/ActiveProjects/Bachman_mikebach_ONT1_weishwu/outputs/basecalls_sup_test/10548-SM-3/work/a4/73069b94e4cd5871aa4876a9ace517
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
+
+ -- Check '.nextflow.log' file for details
+
+executor >  local (18)
+[05/f6138f] process > wf_dorado:dorado (2)           [100%] 2 of 2 ✔
+[10/4aea95] process > wf_dorado:qsFilter (1)         [100%] 2 of 2 ✔
+[5e/77c502] process > wf_dorado:merge_pass_calls_... [100%] 1 of 1 ✔
+[ea/de0767] process > wf_dorado:merge_fail_calls_... [100%] 1 of 1 ✔
+[33/53c919] process > getVersions                    [100%] 1 of 1 ✔
+[1c/ea43f7] process > getParams                      [100%] 1 of 1 ✔
+[42/4be36a] process > bamstats (1)                   [100%] 1 of 1 ✔
+[21/5dac1c] process > progressive_stats (1)          [100%] 1 of 1 ✔
+[e4/836187] process > makeReport (1)                 [  0%] 0 of 1
+[-        ] process > output_last                    -
+[a4/73069b] process > output_stream (7)              [ 28%] 2 of 7, failed: 1
+ERROR ~ Error executing process > 'output_stream (7)'
+
+Caused by:
+  Process `output_stream (7)` terminated with an error exit status (1)
+
+Command executed:
+
+  echo "Writing output files."
+
+Command exit status:
+  1
+
+Command output:
+  (empty)
+
+Command error:
+  ln: failed to create symbolic link 'OPTIONAL_FILE': File exists
+
+Work dir:
+  /nfs/mm-isilon/bioinfcore/ActiveProjects/Bachman_mikebach_ONT1_weishwu/outputs/basecalls_sup_test/10548-SM-3/work/a4/73069b94e4cd5871aa4876a9ace517
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
+
+ -- Check '.nextflow.log' file for details
+
+executor >  local (18)
+[05/f6138f] process > wf_dorado:dorado (2)           [100%] 2 of 2 ✔
+[10/4aea95] process > wf_dorado:qsFilter (1)         [100%] 2 of 2 ✔
+[5e/77c502] process > wf_dorado:merge_pass_calls_... [100%] 1 of 1 ✔
+[ea/de0767] process > wf_dorado:merge_fail_calls_... [100%] 1 of 1 ✔
+[33/53c919] process > getVersions                    [100%] 1 of 1 ✔
+[1c/ea43f7] process > getParams                      [100%] 1 of 1 ✔
+[42/4be36a] process > bamstats (1)                   [100%] 1 of 1 ✔
+[21/5dac1c] process > progressive_stats (1)          [100%] 1 of 1 ✔
+[e4/836187] process > makeReport (1)                 [  0%] 0 of 1
+[-        ] process > output_last                    -
+[eb/0f9197] process > output_stream (5)              [ 57%] 4 of 7, failed: 2
+ERROR ~ Error executing process > 'output_stream (7)'
+
+Caused by:
+  Process `output_stream (7)` terminated with an error exit status (1)
+
+Command executed:
+
+  echo "Writing output files."
+
+Command exit status:
+  1
+
+Command output:
+  (empty)
+
+Command error:
+  ln: failed to create symbolic link 'OPTIONAL_FILE': File exists
+
+Work dir:
+  /nfs/mm-isilon/bioinfcore/ActiveProjects/Bachman_mikebach_ONT1_weishwu/outputs/basecalls_sup_test/10548-SM-3/work/a4/73069b94e4cd5871aa4876a9ace517
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
+
+ -- Check '.nextflow.log' file for details
+WARN: Killing running tasks (4)
+
