@@ -1,0 +1,2 @@
+file	format	type	num_seqs	sum_len	min_len	avg_len	max_len	Q1	Q2	Q3	sum_gap	N50	N50_num	Q20(%)	Q30(%)	AvgQual	GC(%)	N10	N25	N50	N75	N90
+/nfs/turbo/lsa-bis/DNAmet/analysis/wgbs/ont_UW/analysis/basecalls/5555C-10272-CV-2A/5555C-10272-CV-2A.pass.fastq.gz	FASTQ	DNA	49436307	97664761914	5	1975.6	508069	789.0	896.0	1033.0	0	8899	32071	86.73	75.86	17.17	41.19	17005	13122	8899	952	806
